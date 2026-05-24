@@ -1,305 +1,73 @@
 /**
- * Monev Pembelajaran Admin Stylesheet
+ * Monev Kurikulum Admin Stylesheet
  * Custom Predominantly Blue Theme
  */
 
-/* Settings Page Wrapper */
-.monev-admin-wrap {
-    margin: 20px 20px 0 0;
-    max-width: 1400px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-
-/* Premium Header Banner */
-.monev-settings-header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-    color: #ffffff;
-    padding: 30px 40px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.15);
-}
-
-.monev-settings-header h2 {
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.monev-settings-header h2 .dashicons {
-    font-size: 28px;
-    width: 28px;
-    height: 28px;
-    color: #93c5fd;
-}
-
-.monev-settings-header p {
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 0;
-    color: #bfdbfe;
-    max-width: 800px;
-}
-
-/* Settings Grid Layout */
-.monev-settings-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-@media (max-width: 960px) {
-    .monev-settings-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Premium Cards */
-.monev-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    overflow: hidden;
-}
-
-.monev-card-header {
-    background: #f8fafc;
-    border-bottom: 1px solid #e2e8f0;
-    padding: 20px 25px;
-}
-
-.monev-card-header h3 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #1e293b;
-    margin: 0;
-}
-
-.monev-card-body {
-    padding: 25px;
-}
-
-/* Forms & Textarea inside Settings */
-.monev-form-group {
-    margin-bottom: 25px;
-}
-
-.monev-form-group label {
-    display: block;
-    font-size: 15px;
-    color: #0f172a;
-    margin-bottom: 8px;
-}
-
-.monev-form-group textarea {
-    border: 1px solid #cbd5e1 !important;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02) !important;
-    transition: all 0.2s ease-in-out;
-}
-
-.monev-form-group textarea:focus {
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
-    outline: none;
-}
-
-.monev-form-actions .button-primary {
-    background: #2563eb !important;
-    border-color: #2563eb !important;
-    font-weight: 600 !important;
-    padding: 6px 30px !important;
-    border-radius: 6px !important;
-    height: auto !important;
-    font-size: 15px !important;
-    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2) !important;
-    transition: all 0.2s;
-}
-
-.monev-form-actions .button-primary:hover {
-    background: #1d4ed8 !important;
-    border-color: #1d4ed8 !important;
-    transform: translateY(-1px);
-}
-
-/* Visual Hierarchy Preview */
-.monev-visual-hierarchy {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-height: 500px;
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-.monev-preview-faculty {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 15px;
-    border-left: 4px solid #2563eb;
-}
-
-.monev-faculty-title {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    color: #1e3a8a;
-    margin-bottom: 10px;
-}
-
-.monev-faculty-title .dashicons {
-    color: #3b82f6;
-}
-
-.monev-badge-count {
-    background: #eff6ff;
-    color: #2563eb;
-    font-size: 11px;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 20px;
-    margin-left: auto;
-    border: 1px solid #dbeafe;
-}
-
-.monev-preview-prodi-list {
-    margin: 0;
-    padding: 0 0 0 25px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.monev-preview-prodi-list li {
-    font-size: 12px;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    color: #475569;
-    padding: 4px 10px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.monev-preview-prodi-list li .dashicons {
-    font-size: 14px;
-    width: 14px;
-    height: 14px;
-    color: #94a3b8;
-}
-
-.monev-no-prodi {
-    margin: 0;
-    font-style: italic;
-    color: #94a3b8;
-    font-size: 12px;
-    padding-left: 25px;
-}
-
-/* ==========================================
-   CPT Meta Box Builder Styles
-   ========================================== */
+/* Post Editor Meta Box Container */
 .monev-meta-box-container {
-    padding: 10px;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
 }
 
 .monev-intro {
     font-size: 14px;
-    color: #475569;
-    margin-bottom: 20px;
+    color: #64748b;
+    margin-bottom: 25px;
+    line-height: 1.5;
 }
 
-.monev-builder-table {
-    border: 1px solid #e2e8f0 !important;
+/* 2x2 Grid Layout for Fields */
+.monev-admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+@media (max-width: 782px) {
+    .monev-admin-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.monev-admin-field {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: none !important;
-}
-
-.monev-builder-table th {
-    background: #f1f5f9;
-    color: #1e293b !important;
-    font-weight: 600 !important;
-    padding: 12px 15px !important;
-    border-bottom: 2px solid #cbd5e1 !important;
-}
-
-.monev-builder-table td {
-    padding: 12px 15px !important;
-    vertical-align: middle !important;
-}
-
-/* Faculty Row Highlights */
-.monev-row-faculty {
-    background: rgba(37, 99, 235, 0.03) !important;
-}
-
-.monev-row-faculty .monev-cell-title {
-    color: #1e3a8a;
-    font-size: 14px;
-}
-
-.monev-row-faculty .monev-cell-title strong {
-    font-weight: 700;
-}
-
-.monev-row-faculty .monev-cell-title .dashicons {
-    color: #2563eb;
-    margin-right: 6px;
-    vertical-align: text-bottom;
-}
-
-/* Study Program Row */
-.monev-row-prodi .monev-cell-title {
-    color: #334155;
-    padding-left: 20px !important;
     display: flex;
-    align-items: center;
-    gap: 4px;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.monev-indent-line {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-left: 2px solid #cbd5e1;
-    border-bottom: 2px solid #cbd5e1;
-    margin-top: -6px;
-    margin-right: 6px;
+.monev-admin-field label {
+    font-size: 14px;
+    color: #1e3a8a;
+    margin-bottom: 4px;
 }
 
-.monev-row-prodi .monev-cell-title .dashicons {
-    color: #94a3b8;
-    font-size: 16px;
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
+.monev-admin-field .description {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0 0 12px 0;
 }
 
-/* Uploader badging and buttons */
+/* Uploader Styles */
 .monev-media-uploader-wrapper {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .monev-file-badge {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 11px;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
     font-weight: 500;
-    max-width: 180px;
+    max-width: 250px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -312,32 +80,36 @@
 }
 
 .monev-file-badge.has-file {
-    background: #ecfdf5;
-    color: #047857;
-    border: 1px solid #a7f3d0;
+    background: #eff6ff;
+    color: #1e40af;
+    border: 1px solid #bfdbfe;
 }
 
 .monev-file-badge .dashicons {
-    font-size: 14px;
-    width: 14px;
-    height: 14px;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 .monev-file-badge.has-file .dashicons {
-    color: #10b981;
+    color: #3b82f6;
 }
 
 .monev-upload-btn {
-    background: #f8fafc !important;
-    border-color: #cbd5e1 !important;
-    color: #334155 !important;
+    background: #2563eb !important;
+    border-color: #2563eb !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    border-radius: 4px !important;
+    padding: 2px 14px !important;
+    height: auto !important;
+    line-height: 2 !important;
     transition: all 0.15s;
 }
 
 .monev-upload-btn:hover {
-    background: #2563eb !important;
-    border-color: #2563eb !important;
-    color: #ffffff !important;
+    background: #1d4ed8 !important;
+    border-color: #1d4ed8 !important;
 }
 
 .monev-clear-btn {
@@ -347,8 +119,9 @@
     font-weight: bold !important;
     border-radius: 4px !important;
     font-size: 14px !important;
-    padding: 0 6px !important;
+    padding: 3px 8px !important;
     cursor: pointer;
+    line-height: 1.4 !important;
 }
 
 .monev-clear-btn:hover {
@@ -357,19 +130,20 @@
     color: #ffffff !important;
 }
 
-/* Form Inputs inside Meta Box */
-.monev-builder-table input[type="url"],
-.monev-builder-table input[type="text"] {
-    width: 100%;
-    max-width: 100%;
+/* Inputs and Select fields styling */
+.monev-admin-field input[type="text"],
+.monev-admin-field input[type="url"],
+.monev-admin-field select {
     border-radius: 4px;
     border: 1px solid #cbd5e1;
-    padding: 4px 8px;
-    font-size: 12px;
+    padding: 8px 12px;
+    font-size: 13px;
+    transition: all 0.2s;
 }
 
-.monev-builder-table input[type="url"]:focus,
-.monev-builder-table input[type="text"]:focus {
+.monev-admin-field input[type="text"]:focus,
+.monev-admin-field input[type="url"]:focus,
+.monev-admin-field select:focus {
     border-color: #2563eb;
     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
     outline: none;
