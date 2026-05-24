@@ -11,11 +11,10 @@ class Monev_Shortcode {
 
     public function __construct() {
         add_shortcode( 'monev_kurikulum', [ $this, 'render_shortcode' ] );
-        add_shortcode( 'monev_pembelajaran', [ $this, 'render_shortcode' ] ); // Support fallback for backwards compatibility
     }
 
     /**
-     * Render the shortcode [monev_kurikulum] / [monev_pembelajaran]
+     * Render the shortcode [monev_kurikulum]
      */
     public function render_shortcode( $atts ) {
         // Enqueue frontend assets
